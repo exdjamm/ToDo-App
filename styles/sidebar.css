@@ -1,0 +1,65 @@
+#sidebar-base{
+    background-color: rgb(49, 49, 49);
+    width: 58px;
+    height: 100vh;
+    z-index: 3;
+}
+#sidebar-base * {
+    margin-top: 10px;
+}
+#compact-sidebar{
+    margin-top: -100%;
+    margin-left: 0;
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#full-sidebar{
+    width: 180px;
+    margin-left: -80%;
+    background-color: rgb(49, 49, 49);
+    z-index: 1;
+}
+#full-sidebar:before{
+    content: "";
+    width: 180px;
+    left: -180px;
+    background-color: rgb(49, 49, 49);
+    z-index: 1;
+    position: absolute;
+    height: 110%;
+    top: -10%;
+}
+#exit-full-sidebar{
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+}
+#full-sidebar, #exit-full-sidebar{
+    height: 110%;
+    top: -10%;
+    left: 44px;
+    transition: 0.25s ease-in-out;
+    position: absolute;
+}
+#sidebar-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+#sidebar-menu:checked + #hamburger-menu div:nth-child(1) {
+    transform: rotate(+45deg);
+    top: 9px;
+    height: 5px;
+}
+#sidebar-menu:checked + #hamburger-menu div:nth-child(2) {
+    opacity: 0;
+}
+#sidebar-menu:checked + #hamburger-menu div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+    height: 5px;
+}

@@ -41,6 +41,7 @@ body{
     background-color: rgb(70, 70, 70);
     width: 100%;
     overflow: auto;
+
 }
 #tasks-section-title{
     background-color: rgb(61, 61, 61);
@@ -73,7 +74,7 @@ body{
     border-radius: 5%;
     margin-left: 15px !important;
     font-family: 'Arial';
-    cursor: pointer;
+    cursor: pointer;    
 }
 #completed-tasks{
     margin-top: 10px;

@@ -1,0 +1,40 @@
+@media (min-height: 680px), screen and (orientation: portrait) {
+	#completed-tasks-btn {
+		height: max-content;
+		margin-bottom: 11px;
+	}
+
+	.task{
+		width: 75vw;
+		margin-left: 15px;
+	}
+
+	#tasks-all {
+		margin: 0;
+		padding: 0;
+
+
+		display: flex;
+		flex-flow: row;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+	#completed-tasks > .task{
+		content: 'Exopdo';
+	}
+
+	.tasks-group {
+		margin-top: 15px !important; 
+	}
+
+	#completed-tasks {
+		padding-right: 15px;
+	}
+	#tasks-all .tasks-group { 
+		scroll-snap-align: start;
+		display: initial;
+
+		margin: 0; 
+	}
+}

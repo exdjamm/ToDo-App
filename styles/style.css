@@ -75,6 +75,8 @@ body{
     margin-left: 15px !important;
     font-family: 'Arial';
     cursor: pointer;    
+    width: max-content;
+    margin-bottom: 5px;
 }
 #completed-tasks{
     margin-top: 10px;

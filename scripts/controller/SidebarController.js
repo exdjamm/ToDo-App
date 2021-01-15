@@ -6,7 +6,7 @@ class SidebarController {
         this._sidebarElements = document.querySelector(".sidebar")
         this._compactSidebar = document.querySelector("#compact-sidebar")
         this._fullSidebar = document.querySelector("#full-sidebar")
-        this._clickExitFullSidebar = document.querySelector('#exit-full-sidebar')
+        this._clickExitFullSidebar = document.querySelector('#opacity-layer')
         this._newTaskBtn = document.querySelector("#new-task-btn")
 
         this.initialize();
